@@ -1,0 +1,32 @@
+server:
+  port: 7778
+
+spring:
+  application:
+    name: api
+  config:
+    activate:
+      on-profile:
+        - prod
+  import:
+    - classpath:/application-prod.yml
+#   datasource:
+#     url: jdbc:h2:~/h2db;
+#     driverClassName: org.h2.Driver
+#     username: ENC(XtvdNQ53n9x9d6BdnNC9hw==)
+#     password: 
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: debug
+        type:
+          descriptor:
+            sql: trace
