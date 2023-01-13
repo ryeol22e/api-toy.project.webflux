@@ -5,4 +5,4 @@ pluginManagement {
 		gradlePluginPortal()
 	}
 }
-rootProject.name = 'toy.project.api-webflux'
+rootProject.name = 'toy.project.api.webflux'
